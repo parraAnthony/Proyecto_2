@@ -42,7 +42,7 @@ function App() {
         <Background style={style?"#D5F3FF 0%, #51B4E8 100%":"#53388f 0%, #2f2958 100%"}/>
         <div className='top__bar'>
           <h1>Weather app</h1>
-          <button onClick={()=>setStyle(!style)} className={style?'desing dark':'desing light'}>{style?"Dark":"Light"}</button>
+          <button onClick={()=>setStyle(!style)} className={style?'desing dark top':'desing light top'}>{style?"Dark":"Light"}</button>
         </div>
         <article className={style?'container background__light':'container background__dark'}>
           <div className='top__container'>

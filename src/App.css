@@ -1,0 +1,157 @@
+.lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #fff;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+  50%, 100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
+.load {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #51B4E8;
+  
+}
+html, body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+h1{
+  font-size: 36px;
+}
+
+.total__container{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.container {
+  width: 600px;
+  max-width: 80%;
+  height: 400px;
+  box-shadow:  0px 4.85px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.container > div{
+  display: flex;
+  width: 100%;
+  max-height: 45%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+
+}
+.container .top__container h2{
+  font-size: 95px;
+}
+.container .bot__container{
+  font-size: 23px;
+}
+.container .mid__container{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.container h4 { 
+  margin: 0;
+  font-size: 18px;
+
+}
+
+.background__dark{
+  color: #56a5f1;
+  background-image: linear-gradient(to right, #583683 0%, #593684 0.1%, #362a84 100%);
+}
+.background__light{
+  color: #56a5f1;
+  background-image: linear-gradient(to right, #E5F2FF 0%, #d5f3ff 97.4%);
+}
+
+
+.desing {
+  width: 178px;
+  height: 38px;
+  border-radius: 4.86px;
+  color: white;
+  border: none;
+  box-shadow: 0px 4.65px rgba(0, 0, 0, 0.25);
+  font-size: 18px;
+}
+.light {
+  background-color: #38a0d8;
+}
+.dark {
+  background-color: #7d69f1;
+}
+.bottom {
+  margin-top: 5%;
+}
+.top__bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5%;
+  color: white;
+}
+@media screen and (max-width: 576px) {
+  h1{
+    font-size: 23px;
+  }
+  .container .top__container h2{
+    font-size: 79px;
+  }
+  .container .bot__container{
+    font-size: 19px;
+  }
+}
